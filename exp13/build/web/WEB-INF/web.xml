@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>servlet</servlet-name>
+        <servlet-class>servlet</servlet-class>
+        <init-param>
+            <param-name>maha</param-name>
+            <param-value>Vignan</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>servlet1</servlet-name>
+        <servlet-class>servlet1</servlet-class>
+        <init-param>
+            <param-name>email</param-name>
+            <param-value>nagagopitelaprolu077@gmail.com </param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>9553211384 </param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet</servlet-name>
+        <url-pattern>/servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servlet1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
